@@ -2,7 +2,7 @@ import express from "express";
 import { prismaClient } from "db/client";
 
 const app = express();
-
+// satyam singh 
 app.use(express.json());
 
 app.get("/users", (req, res) => {
