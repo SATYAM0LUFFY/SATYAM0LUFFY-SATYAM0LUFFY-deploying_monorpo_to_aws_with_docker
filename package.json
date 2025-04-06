@@ -8,7 +8,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types" , 
     "db:gen" : "cd packages/db && npx prisma generate && cd ../.. " , 
-    "start:web" : "cd packages/web && npm run start && cd ../.. "
+    "start:web" : "cd packages/web && npm run start && cd ../.. ",
+    "start:backend": "cd apps/http-server && bun run index.ts",
+    "start:websocket": "cd apps/websocket && bun run index.ts"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
