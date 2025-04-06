@@ -13,4 +13,4 @@ RUN bun run db:gen
 
 EXPOSE 8082
 
-CMD ["bun" , "run" , "index.ts"]
+CMD ["bun" , "run" , "start:websocket"]
